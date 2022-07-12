@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+    <title>Memory Game</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+  </head>
+  <body>
+
+    <div id="main" class="container">
+
+      <h1>Memory Game!</h1>
+
+      <div>Try to find the matching dogs.</div>
+
+      <div class="container dog-container">
+
+        <div class="row">
+
+          <div onclick="showDog('beagle1')" class="col-4 dog-col">
+            <img id="beagle1" class="dog-img" alt="beagle" src="dogs\beagle.jpg">
+          </div>
+
+          <div onclick="showDog('dachshund1')" class="col-4 dog-col">
+            <img id="dachshund1" class="dog-img" alt="dachshund" src="dogs\dachshund.jpg">
+          </div>
+
+          <div onclick="showDog('beagle2')" class="col-4 dog-col">
+            <img id="beagle2" class="dog-img" alt="beagle" src="dogs\beagle.jpg">
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div onclick="showDog('pug1')" class="col-4 dog-col">
+            <img id="pug1" class="dog-img" alt="pug" src="dogs\pug.jpg">
+          </div>
+
+          <div onclick="showDog('pug2')" class="col-4 dog-col">
+            <img id="pug2" class="dog-img" alt="pug" src="dogs\pug.jpg">
+          </div>
+
+          <div onclick="showDog('dachshund2')" class="col-4 dog-col">
+            <img id="dachshund2" class="dog-img" alt="dachshund" src="dogs\dachshund.jpg">
+          </div>
+        </div>
+
+      </div>
+
+      <button type="button" onclick="retry()" id="retry-btn" class="btn btn-primary">RETRY!</button>
+
+      <div class="scores wins">Score: <span id="score">0</span></div>
+      <div class="scores fails">Failed Attemps: <span id="fails">0</span></div>
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

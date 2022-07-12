@@ -1,0 +1,36 @@
+.dog-col{
+    padding: 0px;
+    background-color: green;
+    width: 432px;
+    height: 290px;
+}
+
+.dog-img{
+    display: none;
+}
+
+.col-4{
+    margin: 1px
+}
+
+.dog-container{
+    padding: 0px;
+}
+
+#retry-btn{
+    font-size: xx-large;
+    margin-top: 26px;
+}
+
+.scores {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.wins {
+    color: forestgreen;
+}
+
+.fails {
+    color: orangered;
+}
